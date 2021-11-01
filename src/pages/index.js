@@ -15,6 +15,8 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <link rel="me" href="https://github.com/tensorglitch" />
+      <link rel="webmention" href="https://webmention.io/pensive-boyd-f6323b.netlify.app/webmention" />
+      <link rel="pingback" href="https://webmention.io/pensive-boyd-f6323b.netlify.app/xmlrpc" />
       <title>Home Page</title>
       <h1>{title}</h1>
       <p>{description}</p>
