@@ -34,5 +34,13 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-source-webmentions",
+      options: {
+        DOMAIN: "pensive-boyd-f6323b.netlify.app", // without https and any slashes
+        TOKEN: process.env.WEBMENTIONS_TOKEN, // token from webmention.io
+        perPage: 100, // optional
+      },
+    }
   ],
 };
