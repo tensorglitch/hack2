@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import { useSiteMetadata } from "../hooks/use-site-metadata";
 
 // styles
@@ -13,6 +14,7 @@ const IndexPage = () => {
   const { title, description } = useSiteMetadata();
   return (
     <main style={pageStyles}>
+      <link rel="me" href="https://github.com/tensorglitch" />
       <title>Home Page</title>
       <h1>{title}</h1>
       <p>{description}</p>
